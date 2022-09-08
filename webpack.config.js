@@ -21,5 +21,10 @@ module.exports = {
   stats: {
     colors: true
   },
-  devtool: "source-map"
+  devtool: "source-map",
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 8080,
+  },
 };
